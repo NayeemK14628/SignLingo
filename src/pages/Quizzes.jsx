@@ -9,6 +9,7 @@ const Quizzes = () => {
   const questions = [
     {
       text: "What color is this?",
+      videoUrl: "./yellow.mp4",
       options: [
         { id: 0, text: "Black", isCorrect: false },
         { id: 1, text: "Blue", isCorrect: false },
@@ -18,6 +19,7 @@ const Quizzes = () => {
     },
     {
       text: "What color is this?",
+      videoUrl: "./green.mp4",
       options: [
         { id: 0, text: "Green", isCorrect: true },
         { id: 1, text: "Red", isCorrect: false },
@@ -27,6 +29,7 @@ const Quizzes = () => {
     },
     {
       text: "What color is this?",
+      videoUrl: "./blue.mp4",
       options: [
         { id: 0, text: "Blue", isCorrect: true },
         { id: 1, text: "White", isCorrect: false },
@@ -36,6 +39,7 @@ const Quizzes = () => {
     },
     {
       text: "What color is this?",
+      videoUrl: "./purple.mp4",
       options: [
         { id: 0, text: "Red", isCorrect: false },
         { id: 1, text: "Purple", isCorrect: true },
@@ -45,6 +49,7 @@ const Quizzes = () => {
     },
     {
       text: "What color is this?",
+      videoUrl: "./black.mp4",
       options: [
         { id: 0, text: "Orange", isCorrect: false },
         { id: 1, text: "Pink", isCorrect: false },
@@ -95,7 +100,6 @@ const Quizzes = () => {
         <div className="question-card">
           <h2>Question {currentQuestion + 1} out of {questions.length}</h2>
           <h3 className="question-text">{questions[currentQuestion].text}</h3>
-
 
           <ul>
             {questions[currentQuestion].options.map((option) => {
