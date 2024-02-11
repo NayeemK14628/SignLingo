@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.horizontalBar{
+  background-color: white;
+  height: 5px;
+  width: autopx;
+  border-radius: 50px;
+  margin: auto;
+
+}
+
+.buttonGrid{
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 6rem);
+  margin: auto;
+  text-align: center;
+}
+
+.ABC1s {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin:5px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.ABC2s {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin:5px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.heading1 {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.logo {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em #010104aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
